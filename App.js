@@ -1,14 +1,12 @@
 
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import Formulario from './src/components/Formulario';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hello World!</Text>
-      <Text style={styles.subtitle}>
-        Criptomonedas Mobile
-      </Text>
+      <Formulario />
       <StatusBar style="auto" />
     </View>
   );
@@ -16,20 +14,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#2563eb',
-  },
-  subtitle: {
-    fontSize: 18,
-    marginTop: 10,
-    color: '#555555',
-  },
+    flex: 1
+  }
 });
+
 
